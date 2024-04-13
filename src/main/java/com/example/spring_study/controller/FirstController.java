@@ -8,12 +8,12 @@ import org.springframework.ui.Model;
 public class FirstController {
     @GetMapping("/hi")
     public String niceToMeetYou(Model model){
-        model.addAttribute("username","donghyeon");
+        model.addAttribute("username","TRV449");
         return "greetings";
     }
     @GetMapping("/bye")
     public String seeYouNext(Model model){
-        model.addAttribute("nickname","donghyeon");
+        model.addAttribute("nickname","TRV449");
         return "goodbye";
     }
 }
