@@ -4,14 +4,12 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 @NoArgsConstructor
 @ToString
 @Entity
+@Getter
 public class Article {
     @Id
     @GeneratedValue
@@ -26,4 +24,6 @@ public class Article {
         this.title = title;
         this.content = content;
     }
+
+
 }
